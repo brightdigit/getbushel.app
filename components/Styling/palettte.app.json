@@ -1,0 +1,125 @@
+[
+    {
+      "paletteName": "water",
+      "swatches": [
+        {
+          "name": "100",
+          "color": "EEF7FF"
+        },
+        {
+          "name": "200",
+          "color": "E2F1FE"
+        },
+        {
+          "name": "300",
+          "color": "D7EBFC"
+        },
+        {
+          "name": "400",
+          "color": "CBE4FB"
+        },
+        {
+          "name": "500",
+          "color": "BDDCF9"
+        },
+        {
+          "name": "600",
+          "color": "B0D5F7"
+        },
+        {
+          "name": "700",
+          "color": "A3CEF5"
+        },
+        {
+          "name": "800",
+          "color": "96C6F2"
+        },
+        {
+          "name": "900",
+          "color": "8AC0F2"
+        }
+      ]
+    },
+    {
+      "paletteName": "apple",
+      "swatches": [
+        {
+          "name": "100",
+          "color": "FF7884"
+        },
+        {
+          "name": "200",
+          "color": "FF6D7A"
+        },
+        {
+          "name": "300",
+          "color": "FF6372"
+        },
+        {
+          "name": "400",
+          "color": "FE5969"
+        },
+        {
+          "name": "500",
+          "color": "FE4F60"
+        },
+        {
+          "name": "600",
+          "color": "F34C5C"
+        },
+        {
+          "name": "700",
+          "color": "E84857"
+        },
+        {
+          "name": "800",
+          "color": "DE4553"
+        },
+        {
+          "name": "900",
+          "color": "D44250"
+        }
+      ]
+    },
+    {
+      "paletteName": "sandy",
+      "swatches": [
+        {
+          "name": "100",
+          "color": "FFD3A6"
+        },
+        {
+          "name": "200",
+          "color": "FFCE9B"
+        },
+        {
+          "name": "300",
+          "color": "FFC891"
+        },
+        {
+          "name": "400",
+          "color": "FFC286"
+        },
+        {
+          "name": "500",
+          "color": "FFBD7B"
+        },
+        {
+          "name": "600",
+          "color": "FCAF6E"
+        },
+        {
+          "name": "700",
+          "color": "FAA762"
+        },
+        {
+          "name": "800",
+          "color": "FAA157"
+        },
+        {
+          "name": "900",
+          "color": "FA9C4E"
+        }
+      ]
+    }
+  ]

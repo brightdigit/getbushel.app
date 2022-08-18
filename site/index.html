@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Bushel - quickly test, rollback, and simulate your apps on macOS</title>
+  
+  <meta name="description" content="quickly test, rollback, and simulate your apps on macOS">
+  <meta name="author" content="BrightDigit">
+
+  <meta property="og:title" content="Get Bushel for macOS">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getbushel.app/">
+  <meta property="og:description" content="quickly test, rollback, and simulate your apps on macOS">
+
+  <meta property="og:image" content="social-image.jpg">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#8ac0f2">
+  <meta name="theme-color" content="#DAE6F2">
+
+  <script src="/js/main.js"></script>
+  <style>
+    @supports(padding:max(0px)) {
+    body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}
+  </style>
+</head>
+
+<body class="overflow-x-clip">
+  <header class="sm:px-10 px-4 py-4 w-full sm:absolute inset-x-0 top-0 z-20 lg:container lg:mx-auto fixed bg-[#DAE6F2] sm:bg-transparent">
+    <nav class="flex h-10 justify-between ">
+      <a class="text-apple-900 flex" href="/">
+        <img class="object-scale-down block w-10" src="/media/logo.svg" alt="Bushel of Apples logo" width="40" height="40"/>
+        <h1 class="font-black text-2xl  self-center">Bushel</h1>
+      </a>      
+      <ol class="grid grid-rows-1 grid-flow-col gap-4 flex-none justify-items-stretch">        
+        <li class="text-apple-900 items-center hidden sm:flex">
+          <a href="#faq">Features</a>
+        </li> 
+        <li class="text-apple-900 flex items-center">
+          <a href="/">Press Kit</a>
+        </li>
+        <li class="text-apple-900 flex items-center">
+          <a class="text-apple-400 bg-black p-2 rounded-md font-semibold" href="#join-waitlist">Join Waitlist</a>
+        </li>
+      </ol>
+  </nav>
+  </header>
+  <main>
+    <div class="bg-gradient-to-b from-water-300 to-sandy-900 pt-10 drop-shadow-2xl z-10 flex flex-col items-center">
+      <section class="flex flex-col items-center p-10 lg:container lg:mx-auto">
+        <div class="contents lg:flex lg:items-center sm:self-center">
+          <a class="flex m-10 items-center" href="/">
+            <img class="max-h-56" src="/media/logo.svg" alt="Bushel of Apples logo" width="224" height="224"/>
+          </a>
+          <h2 class="text-4xl lg:text-6xl xl:text-7xl text-center font-black max-w-2xl">iOS Simulator but for macOS</h2>
+        </div>
+        <p class="py-4 text-lg md:text-xl md:py-8 max-w-screen-sm md:text-center md:leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
+        <form id="join-waitlist" class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-sm xl:text-xl" action="https://formkeep.com/f/596822e0c973"
+        accept-charset="UTF-8"
+        enctype="multipart/form-data"
+        method="POST">
+          <input name="email" placeholder="leogdion@brightdigit.com" class="bg-opacity-80 rounded-lg bg-white p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100" type="email" required>
+          <input name="source" value="hero" type="hidden">
+          <button type="submit" class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
+            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> Join the Waitlist
+          </button>
+        </form>
+      </section>
+      <section class="flex flex-col items-center p-10 md:flex-row lg:container lg:mx-auto">
+        <picture class="sm:flex">
+          <source type="image/webp" srcset="/media/screenshots/macOS.monterey.sharing.prefs.webp">
+          <source type="image/png" srcset="/media/screenshots/macOS.monterey.sharing.prefs.png">
+          <img class="w-full" src="/media/screenshots/macOS.monterey.sharing.prefs.png" alt="Running macOS Monterey Virtually" width="370" height="244"/>
+        </picture>
+        
+        <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
+          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Cras id mauris sit</h2>        
+          <p class="my-2 lg:font-light lg:leading-relaxed">Cras a massa et augue gravida interdum. Etiam viverra hendrerit sem eget dapibus. Sed venenatis vitae ex ut.</p>
+        </div>
+      </section>
+      </div>
+      <div class="bg-gradient-to-b from-apple-100 to-water-900">
+
+      <section class="flex flex-col items-center p-10 md:flex-row-reverse lg:container lg:mx-auto sm:py-16 lg:py-24">
+        <picture class="sm:flex">
+          <source type="image/webp" srcset="/media/screenshots/bushel.welcome.webp">
+          <source type="image/png" srcset="/media/screenshots/bushel.welcome.png">
+          <img class="w-full" src="/media/screenshots/bushel.welcome.png" alt="Bushel Welcome Screen" width="370" height="244"/>
+        </picture>
+        
+        <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
+          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Duis vestibulum neque</h2>        
+          <p class="my-2 lg:font-light lg:leading-relaxed">Maecenas vitae neque venenatis, malesuada metus ut, pulvinar felis. Praesent ullamcorper, est scelerisque accumsan mollis, est sem laoreet.</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center p-10 md:flex-row lg:container lg:mx-auto sm:py-16 lg:py-24">
+        <picture class="sm:w-full">
+          <source type="image/webp" srcset="/media/screenshots/macOS.monterey.hallo.webp">
+          <source type="image/png" srcset="/media/screenshots/macOS.monterey.hallo.png">
+          <img class="w-full" src="/media/screenshots/macOS.monterey.hallo.png" alt="macOS Monterey Welcome Screen" width="370" height="244"/>
+        </picture>
+        
+        <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
+          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Suspendisse dictum convallis</h2>        
+          <p class="my-2 lg:font-light lg:leading-relaxed">Maecenas gravida, ante pretium sollicitudin scelerisque, velit erat sodales nibh, scelerisque molestie lorem dolor eget dui. Nullam varius.</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center p-10 md:flex-row-reverse lg:container lg:mx-auto sm:py-16 lg:py-24">
+        <picture class="sm:w-full">
+          <source type="image/webp" srcset="/media/screenshots/bushel.image.library.webp">
+          <source type="image/png" srcset="/media/screenshots/bushel.image.library.png">
+          <img class="w-full" src="/media/screenshotsbushel.image.library.png" alt="Running macOS Monterey Virtually" width="370" height="244"/>
+        </picture>
+        
+        <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
+          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Integer ac leo</h2>        
+          <p class="my-2 lg:font-light lg:leading-relaxed">Sed id tempor lacus. Fusce egestas sit amet arcu eu eleifend. Nullam nec viverra metus. Aliquam fermentum lectus.</p>
+        </div>
+      </section>
+    </div>
+    <div class="drop-shadow-2xl bg-gradient-to-b from-sandy-100 to-apple-100 sm:py-10">
+      <section id="faq" class="flex flex-col items-center lg:container lg:mx-auto mx-10 py-4">
+        <h2 class="text-2xl my-2 font-bold sm:text-4xl sm:tracking-tight sm:my-6 xl:my-8 md:text-6xl 2xl:text-8xl">Sed id tempor lacus</h2>
+        <ol class="grid grid-cols-1 grid-flow-row gap-2 my-2 text-lg sm:text-xl sm:gap-6 sm:my-4 md:text-2xl md:font-light 2xl:text-4xl 2xl:gap-8 2xl:my-12">
+          <li>Concerning Hobbits l golf air fifth bell prolonging camp.</li>
+          <li>Grond humble rods nearest mangler.</li>
+          <li>Enormity Lórien merry gravy stayed move.</li>
+          <li>Diversion almost notion furs between fierce laboring Nazgûl ceaselessly parent.</li>
+          <li>Agree ruling um wasteland Bagshot Row expect sleep.</li>
+        </ol>
+        <form class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-sm xl:text-xl" action="https://formkeep.com/f/596822e0c973"
+        accept-charset="UTF-8"
+        enctype="multipart/form-data"
+        method="POST">
+          <input name="email" placeholder="leogdion@brightdigit.com" class="bg-white bg-opacity-80 rounded-lg p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100" type="email" required>
+          <input name="source" value="hero" type="hidden">
+          <button type="submit" class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
+            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> Join the Waitlist
+          </button>
+        </form>     
+      </section> 
+    </div>
+  </main>
+  <footer class="flex flex-col bg-black py-8 text-white text-2xl 2xl:text-4xl 2xl:py-12">
+    <div class="flex flex-col mx-8 lg:container lg:mx-auto">
+      <div class="self-start">
+        <a href="/">
+          <img class="max-h-12 2xl:max-h-max 2xl:h-24 saturate-0 contrast-200 invert w-full my-2 2xl:my-8" alt="BrightDigit" src="/media/brightdigit-name.svg" width="190" height="48">
+        </a>
+      </div>
+      <ol class="grid grid-rows-1 auto-cols-min grid-flow-col gap-4 my-2">
+        <li>
+          <a aria-label="Twitter" href="http://twitter.com/brightdigit">
+            <i class="flaticon-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Github" href="http://github.com/brightdigit">
+            <i class="flaticon-github"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Podcast" href="https://www.empowerapps.show">
+            <i class="flaticon-podcast"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Youtube" href="http://youtube.com/c/BrightdigitLLC">
+            <i class="flaticon-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Newsletter" href="https://us12.campaign-archive.com/home/?u=cb3bba007ed171091f55c47f0&amp;id=584d0d5c40">
+            <i class="flaticon-newsletter"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Rss" href="/feed.rss">
+            <i class="flaticon-rss"></i>
+          </a>
+        </li>
+      </ol>
+    </div>
+      <div class="flex flex-col sm:flex-row mx-8 justify-between mt-2 text-sm p-2 lg:container lg:mx-auto">
+        <div>5859 W Saginaw #182 Lansing MI 48917</div>
+        <div>© Bright Digit, LLC 2022</div>
+      </div>
+  </footer>
+</body>
+</html>
