@@ -1,13 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <title>Bushel - quickly test, rollback, and simulate your apps on macOS</title>
-  
+
   <meta name="description" content="quickly test, rollback, and simulate your apps on macOS">
   <meta name="author" content="BrightDigit">
 
@@ -28,52 +29,66 @@
   <script src="/js/main.js"></script>
   <style>
     @supports(padding:max(0px)) {
-    body, header, footer {
-      padding-left: min(0vmin, env(safe-area-inset-left));
+
+      body,
+      header,
+      footer {
+        padding-left: min(0vmin, env(safe-area-inset-left));
         padding-right: min(0vmin, env(safe-area-inset-right));
+      }
     }
-}
   </style>
 </head>
 
 <body class="overflow-x-clip font-sans">
-  <header class="sm:px-10 px-4 py-4 w-full sm:absolute inset-x-0 top-0 z-20 lg:container lg:mx-auto fixed bg-[#DAE6F2] sm:bg-transparent">
+  <header
+    class="sm:px-10 px-4 py-4 w-full sm:absolute inset-x-0 top-0 z-20 lg:container lg:mx-auto fixed bg-[#DAE6F2] sm:bg-transparent">
     <nav class="flex h-10 justify-between ">
       <a class="text-apple-900 flex" href="/">
-        <img class="object-scale-down block w-10" src="/media/logo.svg" alt="Bushel of Apples logo" width="40" height="40"/>
+        <img class="object-scale-down block w-10" src="/media/logo.svg" alt="Bushel of Apples logo" width="40"
+          height="40" />
         <h1 class="font-black text-2xl  self-center">Bushel</h1>
-      </a>      
-      <ol class="grid grid-rows-1 grid-flow-col gap-4 flex-none justify-items-stretch">        
-        <li class="text-apple-900 items-center hidden sm:flex">
-          <a href="#faq">Features</a>
-        </li> 
-        <li class="text-apple-900 flex items-center">
+      </a>
+      <ol class="grid grid-rows-1 grid-flow-col gap-4 flex-none justify-items-stretch">
+        <li class="text-apple-900 flex items-center hidden">
           <a href="/">Press Kit</a>
         </li>
         <li class="text-apple-900 flex items-center">
           <a class="text-apple-400 bg-black p-2 rounded-md font-semibold" href="#join-waitlist">Join Waitlist</a>
         </li>
       </ol>
-  </nav>
+    </nav>
   </header>
   <main>
     <div class="bg-gradient-to-b from-water-300 to-sandy-900 pt-10 drop-shadow-2xl z-10 flex flex-col items-center">
       <section class="flex flex-col items-center p-10 lg:container lg:mx-auto">
         <div class="contents lg:flex lg:items-center sm:self-center">
           <a class="flex m-10 items-center" href="/">
-            <img class="max-h-56" src="/media/logo.svg" alt="Bushel of Apples logo" width="224" height="224"/>
+            <img class="max-h-56" src="/media/logo.svg" alt="Bushel of Apples logo" width="224" height="224" />
           </a>
-          <h2 class="text-4xl lg:text-6xl xl:text-7xl text-center font-black max-w-2xl">iOS Simulator but for macOS</h2>
+          <h2 class="text-4xl lg:text-6xl xl:text-7xl lg:leading-snug text-center xl:tracking-tight font-black max-w-2xl">
+            Create Unbreakable macOS Apps
+          </h2>
         </div>
-        <p class="py-4 text-lg md:text-xl md:py-8 max-w-screen-sm md:text-center md:leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-        <form id="join-waitlist" class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-sm xl:text-xl" action="https://formkeep.com/f/596822e0c973"
-        accept-charset="UTF-8"
-        enctype="multipart/form-data"
-        method="POST">
-          <input name="email" placeholder="leogdion@brightdigit.com" class="bg-opacity-80 rounded-lg bg-white p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100" type="email" required>
+        <div class="py-4 text-lg md:text-xl md:py-8 max-w-screen-md md:leading-relaxed grid grid-rows-1 gap-4 lg:gap-6 lg:my-2">
+          <p><strong>Bushel is the macOS virtual machine app for developers</strong> who want to be rigorous and uncompromising in their app testing.
+            <strong>Bushel</strong>  is
+            focused on giving you the complete, native capabilities of the operating system for all your testing
+            requirements.
+          </p>
+        </div>
+        <form id="join-waitlist"
+          class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-md xl:text-xl"
+          action="https://formkeep.com/f/596822e0c973" accept-charset="UTF-8" enctype="multipart/form-data"
+          method="POST">
+          <input name="email" placeholder="leogdion@brightdigit.com"
+            class="bg-opacity-80 rounded-lg bg-white p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100"
+            type="email" required>
           <input name="source" value="hero" type="hidden">
-          <button type="submit" class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
-            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> Join the Waitlist
+          <button type="submit"
+            class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
+            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt="">
+            Join the Waitlist
           </button>
         </form>
       </section>
@@ -81,27 +96,37 @@
         <picture class="sm:flex">
           <source type="image/webp" srcset="/media/screenshots/macOS.monterey.sharing.prefs.webp">
           <source type="image/png" srcset="/media/screenshots/macOS.monterey.sharing.prefs.png">
-          <img class="w-full" src="/media/screenshots/macOS.monterey.sharing.prefs.png" alt="Running macOS Monterey Virtually" width="370" height="244"/>
+          <img class="w-full" src="/media/screenshots/macOS.monterey.sharing.prefs.png"
+            alt="Running macOS Monterey Virtually" width="370" height="244" />
         </picture>
-        
+
         <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
-          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Cras id mauris sit</h2>        
-          <p class="my-2 lg:font-light lg:leading-relaxed">Cras a massa et augue gravida interdum. Etiam viverra hendrerit sem eget dapibus. Sed venenatis vitae ex ut.</p>
+          <h2
+            class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">
+            No more <em>"It works on my machine"</em>
+          </h2>
+          <p class="my-2 lg:font-light lg:leading-relaxed">
+            <strong>Bushel is a macOS-only virtual machine app made for developers</strong> who need an easy-to-use way to make sure their apps run perfectly across multiple system configurations and localizations.
+          </p>
         </div>
       </section>
-      </div>
-      <div class="bg-gradient-to-b from-apple-100 to-water-900">
+    </div>
+    <div class="bg-gradient-to-b from-apple-100 to-water-900">
 
       <section class="flex flex-col items-center p-10 md:flex-row-reverse lg:container lg:mx-auto sm:py-16 lg:py-24">
         <picture class="sm:flex">
           <source type="image/webp" srcset="/media/screenshots/bushel.welcome.webp">
           <source type="image/png" srcset="/media/screenshots/bushel.welcome.png">
-          <img class="w-full" src="/media/screenshots/bushel.welcome.png" alt="Bushel Welcome Screen" width="370" height="244"/>
+          <img class="w-full" src="/media/screenshots/bushel.welcome.png" alt="Bushel Welcome Screen" width="370"
+            height="244" />
         </picture>
-        
+
         <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
-          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Duis vestibulum neque</h2>        
-          <p class="my-2 lg:font-light lg:leading-relaxed">Maecenas vitae neque venenatis, malesuada metus ut, pulvinar felis. Praesent ullamcorper, est scelerisque accumsan mollis, est sem laoreet.</p>
+          <h2
+            class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">
+            From the Ventura beta to Big Sur…</h2>
+          <p class="my-2 lg:font-light lg:leading-relaxed">With Bushel, you can set up your virtual machine for almost
+            any configuration, <strong>from a fresh, factory reset of the Ventura beta all the way back to Big Sur.</strong></p>
         </div>
       </section>
 
@@ -109,12 +134,18 @@
         <picture class="sm:w-full">
           <source type="image/webp" srcset="/media/screenshots/macOS.monterey.hallo.webp">
           <source type="image/png" srcset="/media/screenshots/macOS.monterey.hallo.png">
-          <img class="w-full" src="/media/screenshots/macOS.monterey.hallo.png" alt="macOS Monterey Welcome Screen" width="370" height="244"/>
+          <img class="w-full" src="/media/screenshots/macOS.monterey.hallo.png" alt="macOS Monterey Welcome Screen"
+            width="370" height="244" />
         </picture>
-        
+
         <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
-          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Suspendisse dictum convallis</h2>        
-          <p class="my-2 lg:font-light lg:leading-relaxed">Maecenas gravida, ante pretium sollicitudin scelerisque, velit erat sodales nibh, scelerisque molestie lorem dolor eget dui. Nullam varius.</p>
+          <h2
+            class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">
+            With 1,000 possibilities, or 1'000…</h2>
+          <p class="my-2 lg:font-light lg:leading-relaxed">
+            For apps in France, China, Egypt and everywhere in between,
+            Bushel can <strong>handle localization, accessibility and UX testing for every locale and language that Apple supports.</strong>
+          </p>
         </div>
       </section>
 
@@ -122,43 +153,95 @@
         <picture class="sm:w-full">
           <source type="image/webp" srcset="/media/screenshots/bushel.image.library.webp">
           <source type="image/png" srcset="/media/screenshots/bushel.image.library.png">
-          <img class="w-full" src="/media/screenshotsbushel.image.library.png" alt="Running macOS Monterey Virtually" width="370" height="244"/>
+          <img class="w-full" src="/media/screenshotsbushel.image.library.png" alt="Running macOS Monterey Virtually"
+            width="370" height="244" />
         </picture>
-        
+
         <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
-          <h2 class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">Integer ac leo</h2>        
-          <p class="my-2 lg:font-light lg:leading-relaxed">Sed id tempor lacus. Fusce egestas sit amet arcu eu eleifend. Nullam nec viverra metus. Aliquam fermentum lectus.</p>
+          <h2
+            class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">
+            You can break everything!</h2>
+          <p class="my-2 lg:font-light lg:leading-relaxed">
+            <strong>Test, simulate, roll back and debug apps and scripts however you need to without worrying about destroying
+            your machine.</strong> 
+            Need to run a startup script on a brand-new machine? We made Bushel to help you do it with zero risk!
+          </p>
         </div>
       </section>
     </div>
     <div class="bg-gradient-to-b from-sandy-100 to-apple-100 sm:py-10">
-      <section id="faq" class="flex flex-col items-center lg:container lg:mx-auto mx-10 py-4">
-        <h2 class="text-2xl my-2 font-bold sm:text-4xl sm:tracking-tight sm:my-6 xl:my-8 md:text-6xl 2xl:text-8xl">Sed id tempor lacus</h2>
-        <ol class="grid grid-cols-1 grid-flow-row gap-2 my-2 text-lg sm:text-xl sm:gap-6 sm:my-4 md:text-2xl md:font-light 2xl:text-4xl 2xl:gap-8 2xl:my-12">
+
+      <section class="flex flex-col items-center p-10 md:flex-row lg:container lg:mx-auto sm:py-16 lg:py-24">
+        <picture class="sm:w-full">
+          <source type="image/webp" srcset="/media/screenshots/bushel.image.library.webp">
+          <source type="image/png" srcset="/media/screenshots/bushel.image.library.png">
+          <img class="w-full" src="/media/screenshotsbushel.image.library.png" alt="Running macOS Monterey Virtually"
+            width="370" height="244" />
+        </picture>
+
+        <div class="contents md:flex md:flex-col md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl xl:mx-8">
+          <h2
+            class="text-2xl mb-2 font-bold text-center md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-7xl lg:mb-4 2xl:mb-6 lg:tracking-tight">
+            Help us make Bushel brilliant!</h2>
+          <p class="my-2 lg:font-light lg:leading-relaxed">
+            Bushel is currently in Alpha, but <strong>we will be ready for testers very soon.</strong> If you want to be invited to our first TestFlight, or even if you just want updates on Bushel, leave us your email below, and we will get in touch with you.
+          </p>
+        </div>
+      </section>
+      <form
+      class="flex-col flex w-full md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 lg:mx-auto lg:max-w-screen-sm xl:text-xl pt-0 p-10"
+      action="https://formkeep.com/f/596822e0c973" accept-charset="UTF-8" enctype="multipart/form-data"
+      method="POST">
+      <input name="email" placeholder="leogdion@brightdigit.com"
+        class="bg-white bg-opacity-80 rounded-lg p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100"
+        type="email" required>
+      <input name="source" value="hero" type="hidden">
+      <button type="submit"
+        class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
+        <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> 
+        Become a Tester
+      </button>
+    </form>
+      <section id="faq" class="hidden flex flex-col items-center lg:container lg:mx-auto mx-10 py-4">
+        <h2 class="text-2xl my-2 font-bold sm:text-4xl sm:tracking-tight sm:my-6 xl:my-8 md:text-6xl 2xl:text-8xl">Help
+          us make Bushel brilliant!</h2>
+        <ol
+          class="grid grid-cols-1 grid-flow-row gap-2 my-2 text-lg sm:text-xl sm:gap-6 sm:my-4 md:text-2xl md:font-light 2xl:text-4xl 2xl:gap-8 2xl:my-12">
           <li>Concerning Hobbits l golf air fifth bell prolonging camp.</li>
           <li>Grond humble rods nearest mangler.</li>
           <li>Enormity Lórien merry gravy stayed move.</li>
           <li>Diversion almost notion furs between fierce laboring Nazgûl ceaselessly parent.</li>
           <li>Agree ruling um wasteland Bagshot Row expect sleep.</li>
         </ol>
-        <form class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-sm xl:text-xl" action="https://formkeep.com/f/596822e0c973"
-        accept-charset="UTF-8"
-        enctype="multipart/form-data"
-        method="POST">
-          <input name="email" placeholder="leogdion@brightdigit.com" class="bg-white bg-opacity-80 rounded-lg p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100" type="email" required>
+        <form
+          class="flex-col flex w-full my-2 md:grid md:grid-rows-1 md:grid-flow-col md:gap-2 md:max-w-screen-sm xl:text-xl"
+          action="https://formkeep.com/f/596822e0c973" accept-charset="UTF-8" enctype="multipart/form-data"
+          method="POST">
+          <input name="email" placeholder="leogdion@brightdigit.com"
+            class="bg-white bg-opacity-80 rounded-lg p-4 my-2 text-lg xl:text-xl outline-none focus:bg-opacity-100"
+            type="email" required>
           <input name="source" value="hero" type="hidden">
-          <button type="submit" class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
-            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> Join the Waitlist
+          <button type="submit"
+            class="bg-gray-800 text-white p-4 text-lg my-2 rounded-lg font-semibold xl:text-xl hover:bg-apple-900">
+            <img class="text-white inline h-6" src="media/checklist.svg" width="24" height="24" alt=""> Join the
+            Waitlist
           </button>
-        </form>     
-      </section> 
+        </form>
+      </section>
     </div>
   </main>
   <footer class="flex flex-col bg-apple-100 py-8 px-8 text-white  text-2xl 2xl:text-4xl 2xl:py-12">
     <div class="flex flex-col lg:container lg:mx-auto drop-shadow">
       <div class="self-start">
         <a title="BrightDigit" href="https://brightdigit.com">
-          <svg class="object-scale-down w-auto aspect-auto h-12 2xl:h-24 my-2 2xl:my-8" alt="BrightDigit"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 49"><path fill="currentColor" d="M37.9 21.2a3 3 0 0 1-.7-.3c-1-.4-2-.7-2.5-.7-.7 0-1.3.4-2 1.1-.6.8-1 1.5-1 2.1v8.8c0 1 .6 1.7 1.7 2l1.4.3.8.1c.2 0 .2.2.2.3 0 .2 0 .3-.2.3h-9.8l-.1-.3c0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.8.8 0 0 1-.3-.2V20c0-.1 0-.2.2-.3l5-2.4.3-.1c.2 0 .3.2.3.5v3.1l.1.3c.1 0 .4-.3.8-1 1.3-1.7 2.3-2.5 3.1-2.5.5 0 1.2.1 2.1.5 1 .4 1.4.7 1.4 1 0 .2-.1.7-.4 1.3-.3.6-.6.9-1 .9M44.7 11.6c-.6 0-1-.2-1.5-.5-.4-.3-.6-.8-.6-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.5 0 1 .2 1.4.7.3.4.5.8.5 1.3s-.1 1-.5 1.3c-.3.4-.8.6-1.3.6m-4.1 23.6c-.1 0-.2-.1-.2-.3 0-.2.3-.4 1-.4 1.3-.2 2-1 2-2.3V22c0-.5-.3-1-.9-1.1l-.8-.3a8 8 0 0 1-.7-.1 1 1 0 0 1-.4-.2V20c0-.1 0-.2.3-.3l5-2.4.2-.1c.3 0 .4.2.4.5v14.6c0 1.3.7 2 2 2.3.7 0 1 .2 1 .4s0 .3-.2.3ZM65.5 24.2a7 7 0 0 0-1.3-4.5 4.4 4.4 0 0 0-3.7-1.7c-2 0-3.3.9-4.1 2.7a8.7 8.7 0 0 0 .7 7c.9 1.6 2.1 2.3 3.7 2.3 1.5 0 2.7-.5 3.5-1.5.8-1 1.2-2.5 1.2-4.3M56 39.3l-.8 1c-.2.3-.3.8-.3 1.3s.2 1 .6 1.6c.3.6.8 1 1.5 1.5a9 9 0 0 0 10.5-.2c1.6-1 2.4-2.3 2.4-3.7 0-1.4-.7-2.3-2-2.8-.7-.2-2.3-.3-4.9-.4-2.6 0-4.2-.1-5-.2l-1 1-1 1M66.5 19l5.2-.3.6.1.3.7.1 1.1v.6H67.8l.3.5.3.8c.2.4.2 1 .2 1.7s-.1 1.5-.5 2.4c-.4.8-1 1.5-1.6 2.2a8.9 8.9 0 0 1-8.4 1.7 31.2 31.2 0 0 0-1.7 1.1c-.8.5-1.2 1-1.2 1.4 0 1 1.8 1.7 5.5 1.7s6 .1 7.2.3a5 5 0 0 1 2.7 1.3c1 1 1.5 2.2 1.5 3.5 0 1-.5 2.2-1.4 3.4-1.7 2-4.2 3.4-7.6 4.1-1.2.3-2.5.4-3.8.4-2.5 0-4.4-.5-5.6-1.4-1.3-.8-2-2-2-3.2 0-.7.2-1.2.5-1.7l1.3-1.3 1.6-1.2c.6-.4 1.2-1 1.7-1.7a6 6 0 0 1-3.2-1.2c-.9-.7-1.3-1.3-1.3-2s.2-1.2.5-1.5l1.3-.8 1.6-.6c.6-.2 1-.5 1.5-.8a7.8 7.8 0 0 1-3.4-2.4c-.8-1-1.2-2-1.2-3.3 0-2.2.8-4 2.4-5.4a8.7 8.7 0 0 1 6-2.1c2.2 0 4 .6 5.4 1.9M79.6 20l.1.6.2-.1.8-1c1.5-1.6 3-2.4 4.5-2.4 2 0 3.4.5 4.3 1.3 1.2 1.2 1.7 3 1.7 5.7v8.1c0 1.3.7 2 2.1 2.3.7 0 1 .2 1 .4s-.1.3-.2.3h-8.7c-.2 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3v-8c0-1.8 0-3-.3-3.6-.5-1.2-1.6-1.8-3.3-1.8-1 0-2 .5-3.2 1.3-1.2.9-1.7 1.9-1.7 2.9v9.2c0 1.3.7 2 2 2.3.7 0 1 .2 1 .4s0 .3-.2.3h-8.7c-.1 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2.1-1 2.1-2.3V8c0-.6-.3-1-.9-1.2l-.8-.2-.7-.1a.9.9 0 0 1-.4-.2V6c0-.1 0-.3.3-.4l5-2.3.2-.1c.2 0 .4.1.4.4ZM101 20.2c-.1 0-.2 0-.2.2V31c0 .8.2 1.4.6 1.9.3.4.8.6 1.3.6s1 0 1.4-.2a29.4 29.4 0 0 0 1.8-1.2l.6-.2.3.1v.6c-1.7 2-3.2 3-4.6 3-1.5 0-2.6-.4-3.3-1.3-.7-1-1.1-2-1.1-3.3V20h-1.5c-.3 0-.5 0-.5-.3v-.4a21.7 21.7 0 0 0 3.4-3l1-1.2c.4-.5.8-.8 1-.8.2 0 .3.1.3.3l-.7 2.6c0 .2.2.3.4.3h5c.5 0 .8.9.8 2.5h-.2ZM134.2 11.6c-.5 0-1-.2-1.4-.5-.4-.3-.6-.8-.6-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.5 0 1 .2 1.3.7.4.4.6.8.6 1.3s-.2 1-.5 1.3c-.4.4-.8.6-1.4.6m-4 23.6c-.2 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.9.9 0 0 1-.3-.2V20c0-.1 0-.2.2-.3l5-2.4.3-.1c.2 0 .3.2.3.5v14.6c0 1.3.7 2 2.1 2.3.6 0 1 .2 1 .4s-.1.3-.2.3ZM155 24.2a7 7 0 0 0-1.3-4.5 4.4 4.4 0 0 0-3.6-1.7c-2 0-3.4.9-4.2 2.7a8.7 8.7 0 0 0 .7 7c1 1.6 2.2 2.3 3.7 2.3s2.7-.5 3.5-1.5c.9-1 1.3-2.5 1.3-4.3m-9.7 15.1-.7 1c-.2.3-.3.8-.3 1.3s.2 1 .5 1.6c.4.6.9 1 1.5 1.5a9 9 0 0 0 10.5-.2c1.6-1 2.4-2.3 2.4-3.7 0-1.4-.7-2.3-2-2.8-.6-.2-2.2-.3-4.8-.4-2.6 0-4.3-.1-5-.2l-1 1c-.5.3-.8.6-1 1M156 19l5.3-.3.5.1.3.7.2 1.1-.1.6h-4.7l.2.5.4.8.2 1.7c0 .7-.2 1.5-.6 2.4-.3.8-.9 1.5-1.6 2.2a8.9 8.9 0 0 1-8.4 1.7 31.2 31.2 0 0 0-1.7 1.1c-.8.5-1.2 1-1.2 1.4 0 1 1.9 1.7 5.5 1.7 3.7 0 6.1.1 7.3.3a5 5 0 0 1 2.7 1.3c1 1 1.5 2.2 1.5 3.5 0 1-.5 2.2-1.5 3.4-1.6 2-4.1 3.4-7.5 4.1-1.2.3-2.5.4-3.9.4-2.4 0-4.3-.5-5.6-1.4-1.3-.8-2-2-2-3.2 0-.7.3-1.2.6-1.7l1.2-1.3 1.7-1.2c.6-.4 1.1-1 1.7-1.7a6 6 0 0 1-3.2-1.2c-1-.7-1.4-1.3-1.4-2s.2-1.2.6-1.5l1.3-.8 1.6-.6 1.4-.8a7.8 7.8 0 0 1-3.4-2.4c-.7-1-1.1-2-1.1-3.3 0-2.2.8-4 2.4-5.4a8.6 8.6 0 0 1 5.9-2.1c2.2 0 4 .6 5.4 1.9M167.9 11.6c-.6 0-1-.2-1.4-.5-.4-.3-.7-.8-.7-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.6 0 1 .2 1.4.7.4.4.6.8.6 1.3s-.2 1-.6 1.3c-.3.4-.8.6-1.3.6m-4 23.6c-.2 0-.3-.1-.3-.3 0-.2.3-.4 1-.4 1.3-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.9.9 0 0 1-.3-.2l-.1-.3.3-.3 5-2.4.3-.1c.2 0 .3.2.3.5v14.6c0 1.3.7 2 2.1 2.3.6 0 1 .2 1 .4s-.1.3-.3.3ZM179.8 20.2l-.1.2V31c0 .8.2 1.4.5 1.9.4.4.8.6 1.3.6.6 0 1 0 1.4-.2a29.4 29.4 0 0 0 1.8-1.2l.7-.2.3.1-.1.6c-1.6 2-3.1 3-4.6 3-1.4 0-2.5-.4-3.2-1.3-.8-1-1.2-2-1.2-3.3V20h-1.4c-.4 0-.6 0-.6-.3l.1-.4a21.7 21.7 0 0 0 3.4-3l1-1.2c.4-.5.7-.8 1-.8.2 0 .3.1.3.3l-.7 2.6c0 .2.1.3.3.3h5c.6 0 .8.9.8 2.5h-.1Z"/><path fill="currentColor" d="M12.8 30.4c1.4 1.5 3 2.5 4.6 3 2 .7 3.6.3 4.9-1a4.4 4.4 0 0 0 1.1-4.6 10 10 0 0 0-2.7-4.4c-2.7-2.7-5.2-3.8-7.6-3.2a5 5 0 0 0-2.4 1.3c-1.3 1.3-1.6 2.7-1.1 4.3.4 1.3 1.4 2.8 3 4.5ZM8.9 8.5c.2-.1.3-.1.4 0 .2.1 0 .8-.3 2a28.6 28.6 0 0 0-1 5.3c-.4 3.5-.1 5.8.8 6.9l.2-.4.3-.7 1.2-1.5c.7-.7 1.6-1.2 2.7-1.6a8.8 8.8 0 0 1 9.6 2.1 8.9 8.9 0 0 1 .1 12.7 7.2 7.2 0 0 1-6.5 2.1c-2.5-.4-4.8-1.5-6.7-3.5a13.1 13.1 0 0 1-4-8.7A37 37 0 0 1 8.3 9.6l.6-1M121.5 31.4c1.6-1.6 2.6-3.1 3-4.5.5-1.5.1-3-1.1-4.2a5 5 0 0 0-2.4-1.4c-2.4-.5-5 .5-7.6 3.3a10 10 0 0 0-2.8 4.3 4.4 4.4 0 0 0 1.2 4.7c1.3 1.3 3 1.6 4.9 1 1.6-.6 3.2-1.6 4.6-3Zm4.3-20.7a37 37 0 0 1 2.6 13.7 13.1 13.1 0 0 1-10.7 12.1c-2.6.4-4.8-.3-6.5-2a8.9 8.9 0 0 1 .1-12.7 9 9 0 0 1 9.6-2.2 7.5 7.5 0 0 1 3.9 3.1 16.4 16.4 0 0 1 .4 1.1c1-1 1.3-3.3 1-6.9a39.3 39.3 0 0 0-1.5-7.3h.5l.6 1.1"/></svg>
+          <div class="text-xs italic md:text-sm">Bushel is owned and developed by</div>
+          <svg class="object-scale-down w-auto aspect-auto h-12 2xl:h-24 my-2 2xl:my-8" alt="BrightDigit"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 49">
+            <path fill="currentColor"
+              d="M37.9 21.2a3 3 0 0 1-.7-.3c-1-.4-2-.7-2.5-.7-.7 0-1.3.4-2 1.1-.6.8-1 1.5-1 2.1v8.8c0 1 .6 1.7 1.7 2l1.4.3.8.1c.2 0 .2.2.2.3 0 .2 0 .3-.2.3h-9.8l-.1-.3c0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.8.8 0 0 1-.3-.2V20c0-.1 0-.2.2-.3l5-2.4.3-.1c.2 0 .3.2.3.5v3.1l.1.3c.1 0 .4-.3.8-1 1.3-1.7 2.3-2.5 3.1-2.5.5 0 1.2.1 2.1.5 1 .4 1.4.7 1.4 1 0 .2-.1.7-.4 1.3-.3.6-.6.9-1 .9M44.7 11.6c-.6 0-1-.2-1.5-.5-.4-.3-.6-.8-.6-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.5 0 1 .2 1.4.7.3.4.5.8.5 1.3s-.1 1-.5 1.3c-.3.4-.8.6-1.3.6m-4.1 23.6c-.1 0-.2-.1-.2-.3 0-.2.3-.4 1-.4 1.3-.2 2-1 2-2.3V22c0-.5-.3-1-.9-1.1l-.8-.3a8 8 0 0 1-.7-.1 1 1 0 0 1-.4-.2V20c0-.1 0-.2.3-.3l5-2.4.2-.1c.3 0 .4.2.4.5v14.6c0 1.3.7 2 2 2.3.7 0 1 .2 1 .4s0 .3-.2.3ZM65.5 24.2a7 7 0 0 0-1.3-4.5 4.4 4.4 0 0 0-3.7-1.7c-2 0-3.3.9-4.1 2.7a8.7 8.7 0 0 0 .7 7c.9 1.6 2.1 2.3 3.7 2.3 1.5 0 2.7-.5 3.5-1.5.8-1 1.2-2.5 1.2-4.3M56 39.3l-.8 1c-.2.3-.3.8-.3 1.3s.2 1 .6 1.6c.3.6.8 1 1.5 1.5a9 9 0 0 0 10.5-.2c1.6-1 2.4-2.3 2.4-3.7 0-1.4-.7-2.3-2-2.8-.7-.2-2.3-.3-4.9-.4-2.6 0-4.2-.1-5-.2l-1 1-1 1M66.5 19l5.2-.3.6.1.3.7.1 1.1v.6H67.8l.3.5.3.8c.2.4.2 1 .2 1.7s-.1 1.5-.5 2.4c-.4.8-1 1.5-1.6 2.2a8.9 8.9 0 0 1-8.4 1.7 31.2 31.2 0 0 0-1.7 1.1c-.8.5-1.2 1-1.2 1.4 0 1 1.8 1.7 5.5 1.7s6 .1 7.2.3a5 5 0 0 1 2.7 1.3c1 1 1.5 2.2 1.5 3.5 0 1-.5 2.2-1.4 3.4-1.7 2-4.2 3.4-7.6 4.1-1.2.3-2.5.4-3.8.4-2.5 0-4.4-.5-5.6-1.4-1.3-.8-2-2-2-3.2 0-.7.2-1.2.5-1.7l1.3-1.3 1.6-1.2c.6-.4 1.2-1 1.7-1.7a6 6 0 0 1-3.2-1.2c-.9-.7-1.3-1.3-1.3-2s.2-1.2.5-1.5l1.3-.8 1.6-.6c.6-.2 1-.5 1.5-.8a7.8 7.8 0 0 1-3.4-2.4c-.8-1-1.2-2-1.2-3.3 0-2.2.8-4 2.4-5.4a8.7 8.7 0 0 1 6-2.1c2.2 0 4 .6 5.4 1.9M79.6 20l.1.6.2-.1.8-1c1.5-1.6 3-2.4 4.5-2.4 2 0 3.4.5 4.3 1.3 1.2 1.2 1.7 3 1.7 5.7v8.1c0 1.3.7 2 2.1 2.3.7 0 1 .2 1 .4s-.1.3-.2.3h-8.7c-.2 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3v-8c0-1.8 0-3-.3-3.6-.5-1.2-1.6-1.8-3.3-1.8-1 0-2 .5-3.2 1.3-1.2.9-1.7 1.9-1.7 2.9v9.2c0 1.3.7 2 2 2.3.7 0 1 .2 1 .4s0 .3-.2.3h-8.7c-.1 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2.1-1 2.1-2.3V8c0-.6-.3-1-.9-1.2l-.8-.2-.7-.1a.9.9 0 0 1-.4-.2V6c0-.1 0-.3.3-.4l5-2.3.2-.1c.2 0 .4.1.4.4ZM101 20.2c-.1 0-.2 0-.2.2V31c0 .8.2 1.4.6 1.9.3.4.8.6 1.3.6s1 0 1.4-.2a29.4 29.4 0 0 0 1.8-1.2l.6-.2.3.1v.6c-1.7 2-3.2 3-4.6 3-1.5 0-2.6-.4-3.3-1.3-.7-1-1.1-2-1.1-3.3V20h-1.5c-.3 0-.5 0-.5-.3v-.4a21.7 21.7 0 0 0 3.4-3l1-1.2c.4-.5.8-.8 1-.8.2 0 .3.1.3.3l-.7 2.6c0 .2.2.3.4.3h5c.5 0 .8.9.8 2.5h-.2ZM134.2 11.6c-.5 0-1-.2-1.4-.5-.4-.3-.6-.8-.6-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.5 0 1 .2 1.3.7.4.4.6.8.6 1.3s-.2 1-.5 1.3c-.4.4-.8.6-1.4.6m-4 23.6c-.2 0-.2-.1-.2-.3 0-.2.3-.4.9-.4 1.4-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.9.9 0 0 1-.3-.2V20c0-.1 0-.2.2-.3l5-2.4.3-.1c.2 0 .3.2.3.5v14.6c0 1.3.7 2 2.1 2.3.6 0 1 .2 1 .4s-.1.3-.2.3ZM155 24.2a7 7 0 0 0-1.3-4.5 4.4 4.4 0 0 0-3.6-1.7c-2 0-3.4.9-4.2 2.7a8.7 8.7 0 0 0 .7 7c1 1.6 2.2 2.3 3.7 2.3s2.7-.5 3.5-1.5c.9-1 1.3-2.5 1.3-4.3m-9.7 15.1-.7 1c-.2.3-.3.8-.3 1.3s.2 1 .5 1.6c.4.6.9 1 1.5 1.5a9 9 0 0 0 10.5-.2c1.6-1 2.4-2.3 2.4-3.7 0-1.4-.7-2.3-2-2.8-.6-.2-2.2-.3-4.8-.4-2.6 0-4.3-.1-5-.2l-1 1c-.5.3-.8.6-1 1M156 19l5.3-.3.5.1.3.7.2 1.1-.1.6h-4.7l.2.5.4.8.2 1.7c0 .7-.2 1.5-.6 2.4-.3.8-.9 1.5-1.6 2.2a8.9 8.9 0 0 1-8.4 1.7 31.2 31.2 0 0 0-1.7 1.1c-.8.5-1.2 1-1.2 1.4 0 1 1.9 1.7 5.5 1.7 3.7 0 6.1.1 7.3.3a5 5 0 0 1 2.7 1.3c1 1 1.5 2.2 1.5 3.5 0 1-.5 2.2-1.5 3.4-1.6 2-4.1 3.4-7.5 4.1-1.2.3-2.5.4-3.9.4-2.4 0-4.3-.5-5.6-1.4-1.3-.8-2-2-2-3.2 0-.7.3-1.2.6-1.7l1.2-1.3 1.7-1.2c.6-.4 1.1-1 1.7-1.7a6 6 0 0 1-3.2-1.2c-1-.7-1.4-1.3-1.4-2s.2-1.2.6-1.5l1.3-.8 1.6-.6 1.4-.8a7.8 7.8 0 0 1-3.4-2.4c-.7-1-1.1-2-1.1-3.3 0-2.2.8-4 2.4-5.4a8.6 8.6 0 0 1 5.9-2.1c2.2 0 4 .6 5.4 1.9M167.9 11.6c-.6 0-1-.2-1.4-.5-.4-.3-.7-.8-.7-1.4 0-.6.2-1.1.6-1.4a2 2 0 0 1 1.4-.6c.6 0 1 .2 1.4.7.4.4.6.8.6 1.3s-.2 1-.6 1.3c-.3.4-.8.6-1.3.6m-4 23.6c-.2 0-.3-.1-.3-.3 0-.2.3-.4 1-.4 1.3-.2 2-1 2-2.3V22c0-.5-.2-1-.8-1.1l-.9-.3-.7-.1a.9.9 0 0 1-.3-.2l-.1-.3.3-.3 5-2.4.3-.1c.2 0 .3.2.3.5v14.6c0 1.3.7 2 2.1 2.3.6 0 1 .2 1 .4s-.1.3-.3.3ZM179.8 20.2l-.1.2V31c0 .8.2 1.4.5 1.9.4.4.8.6 1.3.6.6 0 1 0 1.4-.2a29.4 29.4 0 0 0 1.8-1.2l.7-.2.3.1-.1.6c-1.6 2-3.1 3-4.6 3-1.4 0-2.5-.4-3.2-1.3-.8-1-1.2-2-1.2-3.3V20h-1.4c-.4 0-.6 0-.6-.3l.1-.4a21.7 21.7 0 0 0 3.4-3l1-1.2c.4-.5.7-.8 1-.8.2 0 .3.1.3.3l-.7 2.6c0 .2.1.3.3.3h5c.6 0 .8.9.8 2.5h-.1Z" />
+            <path fill="currentColor"
+              d="M12.8 30.4c1.4 1.5 3 2.5 4.6 3 2 .7 3.6.3 4.9-1a4.4 4.4 0 0 0 1.1-4.6 10 10 0 0 0-2.7-4.4c-2.7-2.7-5.2-3.8-7.6-3.2a5 5 0 0 0-2.4 1.3c-1.3 1.3-1.6 2.7-1.1 4.3.4 1.3 1.4 2.8 3 4.5ZM8.9 8.5c.2-.1.3-.1.4 0 .2.1 0 .8-.3 2a28.6 28.6 0 0 0-1 5.3c-.4 3.5-.1 5.8.8 6.9l.2-.4.3-.7 1.2-1.5c.7-.7 1.6-1.2 2.7-1.6a8.8 8.8 0 0 1 9.6 2.1 8.9 8.9 0 0 1 .1 12.7 7.2 7.2 0 0 1-6.5 2.1c-2.5-.4-4.8-1.5-6.7-3.5a13.1 13.1 0 0 1-4-8.7A37 37 0 0 1 8.3 9.6l.6-1M121.5 31.4c1.6-1.6 2.6-3.1 3-4.5.5-1.5.1-3-1.1-4.2a5 5 0 0 0-2.4-1.4c-2.4-.5-5 .5-7.6 3.3a10 10 0 0 0-2.8 4.3 4.4 4.4 0 0 0 1.2 4.7c1.3 1.3 3 1.6 4.9 1 1.6-.6 3.2-1.6 4.6-3Zm4.3-20.7a37 37 0 0 1 2.6 13.7 13.1 13.1 0 0 1-10.7 12.1c-2.6.4-4.8-.3-6.5-2a8.9 8.9 0 0 1 .1-12.7 9 9 0 0 1 9.6-2.2 7.5 7.5 0 0 1 3.9 3.1 16.4 16.4 0 0 1 .4 1.1c1-1 1.3-3.3 1-6.9a39.3 39.3 0 0 0-1.5-7.3h.5l.6 1.1" />
+          </svg>
         </a>
       </div>
       <ol class="grid grid-rows-1 auto-cols-min grid-flow-col gap-4 my-2">
@@ -183,7 +266,8 @@
           </a>
         </li>
         <li>
-          <a aria-label="Newsletter" href="https://us12.campaign-archive.com/home/?u=cb3bba007ed171091f55c47f0&amp;id=584d0d5c40">
+          <a aria-label="Newsletter"
+            href="https://us12.campaign-archive.com/home/?u=cb3bba007ed171091f55c47f0&amp;id=584d0d5c40">
             <i class="flaticon-newsletter"></i>
           </a>
         </li>
@@ -194,10 +278,13 @@
         </li>
       </ol>
     </div>
-      <div class="flex flex-col sm:flex-row justify-between mt-2 text-sm p-2 lg:container lg:mx-auto drop-shadow lg:font-medium">
-        <div><span class="whitespace-nowrap">5859 W Saginaw #182</span> <span class="whitespace-nowrap">Lansing MI 48917</span></div>
-        <div>© Bright Digit, LLC 2022</div>
-      </div>
+    <div
+      class="flex flex-col sm:flex-row justify-between mt-2 text-sm p-2 lg:container lg:mx-auto drop-shadow lg:font-medium">
+      <div><span class="whitespace-nowrap">5859 W Saginaw #182</span> <span class="whitespace-nowrap">Lansing MI
+          48917</span></div>
+      <div>© Bright Digit, LLC 2022</div>
+    </div>
   </footer>
 </body>
+
 </html>

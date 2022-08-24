@@ -9,11 +9,11 @@
     "dev": {
       "patterns": 
       [
-      "site/**/*.*",
-      "components/Styling/styles/*.*",
-      "components/Styling/scripts/*.*",
-      "tailwind.config.js",
-      "components/Resources/*.*"
+        "site/**/*.*",
+        "components/Styling/styles/*.*",
+        "components/Styling/scripts/*.*",
+        "tailwind.config.js",
+        "components/Resources/*.*"
       ]
     }
   },
@@ -21,7 +21,7 @@
     "prepare": "npm install --prefix components/Styling",
     "start": "npm run watch dev & live-server public --no-browser -q",
     "watch": "npm-watch",
-    "dev": "rm -fR .tmp; mkdir -p .tmp; cp -a components/Resources/. .tmp; cp -a site/. .tmp;NODE_ENV=development npm run --prefix components/Styling publish -- --output-filename ../../.tmp/js/main.js; rm -R public; cp -R .tmp public",    
+    "dev": "rm -fR .tmp; mkdir -p .tmp; cp -a components/Resources/. .tmp; cp -a site/. .tmp;NODE_ENV=development npm run --prefix components/Styling publish -- --output-filename ../../.tmp/js/main.js; rm -fR public; cp -R .tmp public",    
     "build": "rm -fR .public; cp -a components/Resources/. public; cp -a site/. public;NODE_ENV=production npm run --prefix components/Styling publish -- --output-filename ../../public/js/main.js"
   },
   "author": "",
