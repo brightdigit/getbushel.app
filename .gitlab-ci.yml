@@ -15,20 +15,20 @@ image: node:16-slim
 cache:
   - key:
       files:
-          - package-lock.json
+        - package-lock.json
     paths:
-        - node_modules/
+      - node_modules/
   - key:
       files:
-          - components/Styling/package-lock.json
+        - components/Styling/package-lock.json
     paths:
-        - components/Styling/node_modules
+      - components/Styling/node_modules
 pages:
   artifacts:
     paths:
       - public
   script:
     - npm install
-    - npm run build    
+    - npm run build
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec brotli -f -k {} \;
