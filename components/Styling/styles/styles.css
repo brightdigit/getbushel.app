@@ -16,4 +16,33 @@ body {
   p > strong {
     @apply font-semibold;
   }
+
+  main#content, main>.content {
+    @apply font-light bg-gradient-to-b from-water-300 to-apple-12;
+  }
+
+  main#content h1 , main>.content h1{
+    @apply text-4xl sm:text-6xl font-black py-8;
+  }
+
+  main#content h2, main>.content h2{
+    @apply text-2xl sm:text-4xl font-black py-8;
+  }
+
+  main#content h3, main>.content h3{
+    @apply text-xl sm:text-2xl font-semibold py-6;
+  }
+
+
+  main#content h4, main>.content h3{
+    @apply text-base sm:text-lg font-medium py-4;
+  }
+
+  main#content p, main>.content p{ 
+    @apply py-4;
+  }
+
+  main#content ul, main>.content ul { 
+    @apply list-disc ml-8 -indent-4 list-inside py-4;
+  }
 }

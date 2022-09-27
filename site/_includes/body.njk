@@ -1,0 +1,23 @@
+<body class="overflow-x-clip font-sans">
+  <style>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <div class="fixed w-full h-screen -z-50">
+  <div class="bg-water-300 h-1/2"></div>
+  <div class="bg-apple-12 h-1/2"></div>
+  </div>
+  {% include 'header.njk' %}
+  {% if pure %}
+  <main>  {{ content | safe }} </main>
+  {% else %}
+  <main id="content">  
+  <div class="py-12 pt-24 lg:container lg:mx-auto px-8 lg:px-0">
+    {{ content | safe }} 
+    </div>
+  </main>
+  {% endif %}
+  {% include 'footer.njk' %}
+  <script src="/js/main.js"></script>
+</body>

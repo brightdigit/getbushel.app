@@ -1,0 +1,21 @@
+---
+layout: layout.njk
+pure: true
+title: Release Notes | Bushel
+---
+
+<div class="content">
+<div class="py-12 pt-24 lg:container lg:mx-auto px-8 lg:px-0">
+<h1>Release Notes</h1>
+
+
+{%- for releaseNote in collections['release-notes'] | reverse -%}
+<article class="border-b-2 border-b-black py-8 last-of-type:border-b-0 last-of-type:pb-0 first-of-type:pt-0">
+  <h2>{{ releaseNote.data.title }} <span class="tracking-tighter font-thin opacity-30 sm:text-2xl">{{ releaseNote.fileSlug | hex }}</span></h2>
+  <div class="notes">
+    {{ releaseNote.templateContent | safe  }}
+  </div>
+</article>
+{%- endfor -%}
+</div>
+<div>
