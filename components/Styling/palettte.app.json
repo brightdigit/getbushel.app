@@ -44,6 +44,22 @@
     "paletteName": "apple",
     "swatches": [
       {
+        "name": "12",
+        "color": "FFD5D9"
+      },
+      {
+        "name": "25",
+        "color": "FFB8BE"
+      },
+      {
+        "name": "50",
+        "color": "FF9BA4"
+      },
+      {
+        "name": "75",
+        "color": "FF8792"
+      },
+      {
         "name": "100",
         "color": "FF7884"
       },
