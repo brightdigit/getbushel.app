@@ -2,6 +2,7 @@
 tags: release-notes
 title: v1.0.0-alpha.2
 permalink: false
+date: 2022-09-21
 ---
 
 - fixed app crashed when opening Restore Library #38

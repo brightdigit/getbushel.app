@@ -2,6 +2,7 @@
 tags: release-notes
 title: v1.0.0-alpha.1
 permalink: false
+date: 2022-09-07
 ---
 
 ### First TestFlight Build is here!
