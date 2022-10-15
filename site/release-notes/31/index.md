@@ -7,9 +7,9 @@ date: 2022-10-15
 
 ![Screenshot from Bushel v1.0.0-alpha.4!](/media/release-notes/v1.0.0-alpha.4.webp "Screenshot from Bushel v1.0.0-alpha.4")
 
-- Keeps track of open images, libraries, and machines
-- Dropdown now shows previously used restore images
-- Improved interface and flow for creating virutal machines
+- **Dropdown in machine setup view now shows previously used restore images**
+- Improved interface and flow for creating virtual machines
+- Keeps track of opened images, libraries, and machines
 
 ### Known Issues
 
