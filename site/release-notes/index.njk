@@ -10,7 +10,7 @@ title: Release Notes | Bushel
 
 
 {%- for releaseNote in collections['release-notes'] | reverse -%}
-<article class="border-b-2 border-b-black py-8 last-of-type:border-b-0 last-of-type:pb-0 first-of-type:pt-0">
+<article id="build-{{ releaseNote.fileSlug }}" class="border-b-2 border-b-black py-8 last-of-type:border-b-0 last-of-type:pb-0 first-of-type:pt-0">
   <h2>{{ releaseNote.data.title }} <span class="tracking-tighter font-thin opacity-30 sm:text-2xl">{{ releaseNote.fileSlug | hex }}</span></h2>
   <div class="notes">
     {{ releaseNote.templateContent | safe  }}

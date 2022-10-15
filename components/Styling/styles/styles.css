@@ -18,7 +18,7 @@ body {
   }
 
   main#content, main>.content {
-    @apply font-light bg-gradient-to-b from-water-300 to-apple-12;
+    @apply font-light bg-gradient-to-b from-water-300 to-apple-12 lg:text-lg;
   }
 
   main#content h1 , main>.content h1{
@@ -30,19 +30,26 @@ body {
   }
 
   main#content h3, main>.content h3{
-    @apply text-xl sm:text-2xl font-semibold py-6;
+    @apply text-xl sm:text-2xl font-semibold lg:font-bold py-6;
   }
-
-
-  main#content h4, main>.content h3{
-    @apply text-base sm:text-lg font-medium py-4;
+ 
+  main#content h4, main>.content h4{
+    @apply text-base lg:text-xl py-2 lg:font-medium;
   }
-
+  
   main#content p, main>.content p{ 
     @apply py-4;
   }
 
+  main#content strong, main>.content strong {
+    @apply font-semibold;
+  }
+
   main#content ul, main>.content ul { 
     @apply list-disc ml-8 -indent-4 list-inside py-4;
+  }
+
+  main>.content .notes img{
+    @apply xl:max-w-4xl;
   }
 }
