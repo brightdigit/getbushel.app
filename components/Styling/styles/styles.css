@@ -50,6 +50,6 @@ body {
   }
 
   main>.content .notes img{
-    @apply xl:max-w-4xl;
+    @apply xl:max-w-4xl xl:max-h-96;
   }
 }
