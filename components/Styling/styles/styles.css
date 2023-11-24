@@ -17,6 +17,8 @@ body {
     @apply font-semibold;
   }
 
+
+
   main#content, main>.content {
     @apply font-light bg-gradient-to-b from-water-300 to-apple-12 lg:text-lg;
   }
@@ -25,15 +27,15 @@ body {
     @apply text-4xl sm:text-6xl font-black py-8;
   }
 
-  main#content h2, main>.content h2{
+  main>.content h2{
     @apply text-2xl sm:text-4xl font-black py-8;
   }
 
-  main#content h3, main>.content h3{
+  main>.content h3{
     @apply text-xl sm:text-2xl font-semibold lg:font-bold py-6;
   }
  
-  main#content h4, main>.content h4{
+  main>.content h4{
     @apply text-base lg:text-xl py-2 lg:font-medium;
   }
   
@@ -45,11 +47,39 @@ body {
     @apply font-semibold;
   }
 
-  main#content ul, main>.content ul { 
+  main>.content ul { 
     @apply list-disc ml-8 -indent-4 list-inside py-4;
   }
 
   main>.content .notes img{
     @apply xl:max-w-4xl xl:max-h-96;
+  }
+
+  body#support>main#content {
+    @apply bg-white bg-none;
+  }
+
+  body#support>main#content h4 {
+    @apply text-lg font-normal my-2 sm:text-xl sm:mt-4 sm:-mb-2;
+  }
+
+  body#support>main#content ol {
+    @apply sm:my-4;
+  }
+
+  body#support>main#content section p a {
+    @apply text-water-975 underline;
+  }
+
+  body#support>main#content #table-of-contents {
+    @apply text-sm sm:text-base my-4 -ml-4;
+  }
+
+  body#support>main#content #table-of-contents a {
+    @apply text-water-975 underline text-lg p-2;
+  }
+
+  body#support>main#content #table-of-contents li{
+    @apply mx-4 my-1;
   }
 }

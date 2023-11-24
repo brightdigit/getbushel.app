@@ -251,9 +251,9 @@ These Terms of Use and any policies or operating rules posted by us on the Site 
 
 In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:
 
-**Bright Digit LLC** <br>
-**5859 W Saginaw #182** <br>
-**Lansing, MI 48917** <br>
-**United States** <br>
-**Phone: 5173253123** <br>
-**leo@brightdigit.com**
+* **Bright Digit LLC**
+* **5859 W Saginaw #182**
+* **Lansing, MI 48917**
+* **United States**
+* **Phone: 5173253123**
+* **leo@brightdigit.com**

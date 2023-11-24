@@ -4,7 +4,11 @@ description: Quickly test, rollback, simulate and debug your macOS apps. Sign up
 ---
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en"
+{% if itemtype %}
+itemscope itemtype="{{ itemtype }}"
+{% endif %}
+>
   {% include 'head.njk' %}
   {% include 'body.njk' %}
 </html>

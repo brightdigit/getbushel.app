@@ -1,0 +1,84 @@
+---
+layout: layout.njk
+title: Support | Bushel
+description: This is your comprehensive resource for optimizing your app testing and development with Bushel. 
+itemtype: https://schema.org/FAQPage
+---
+{% svgsprite %}
+
+<div class="max-w-screen-lg mx-auto">
+<em>Welcome to Bushel</em>
+<h1>Support</h1>
+
+<img src="https://picsum.photos/id/9/600/400" alt="Computer">
+
+<p>
+This is your comprehensive resource for optimizing your app testing and development with Bushel. 
+Dive into troubleshooting tips, step-by-step guides, and best practices for virtual machine setup, snapshot management, and library organization. 
+Whether you're new or seeking advanced assistance, our goal is to equip you with the support needed to maximize your Bushel experience. 
+<a href="bushel@brightdigit.com">Reach out anytime for dedicated assistance;</a> our team is here to ensure your success in app development.
+</p>
+
+<nav>
+<ul class="m-0 block sm:grid sm:grid-rows-none sm:grid-flow-col sm:auto-cols-fr sm:gap-x-2 sm:grid-cols-3 sm:justify-items-stretch sm:content-start sm:place-content-start sm:place-items-start">
+{%- for section in collections.support -%}
+{%- if section.data.draft !== true -%}
+<li  class="list-none flex flex-col m-0 p-0 font-medium">
+<a class="lg:rounded-lg opacity-80 bg-opacity-70 hover:bg-opacity-100 hover:opacity-100 rounded sm:rounded-md inline-flex items-center p-4 bg-sandy-900 bg-gradient-to-b from-apple-500 text-white fill-sandy-100 my-2 w-full hover:fill-white hover:text-white sm:flex sm:flex-col sm:text-xl" href="#{{ section.fileSlug }}">
+{% set svgID = (section.data.icon | default(section.data.tags)) %}
+{% svg svgID, "w-10 h-10 p-2 sm:w-20 sm:h-20 lg:h-36 lg:w-36 lg:p-4"  %}
+<div class="lg:text-3xl lg:py-4 text-white">{{ section.data.title }}</div>
+</a>
+</li> 
+{%- endif -%}
+{%- endfor %} 
+</ul>
+<ul id="table-of-contents">
+  {%- for section in collections.support -%}
+{%- if section.data.draft !== true -%}
+<li>
+<a href="#{{ section.fileSlug }}">
+{{ section.data.title }}
+</a>
+<ul>
+{%- for post in section.data.children -%}
+<li>
+<a href="#{{ section.fileSlug }}">
+{{ post.data.title }}
+</a>
+</li>
+{%- endfor %} 
+</ul>
+</li>
+{%- endif -%}
+{%- endfor %} 
+</ul>
+</nav>
+
+{%- for section in collections.support -%}
+{%- if section.data.draft !== true -%}
+{% set svgClass = "m-auto my-4 h-12 sm:h-24 sm:my-6 lg:h-auto lg:m-0 aspect-square " + section.data.headerClasses %}
+<section class="my-8 border-t-2 lg:border-t-0">
+<h2 class="text-2xl font-bold my-8 sm:text-3xl lg:text-5xl" id="{{ section.fileSlug }}">{{section.data.title}}</h2>
+  <div class="notes">
+    {{ section.templateContent | safe  }}
+  </div>
+  {%- for post in section.data.children -%}
+  <article class="my-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  {%- if section.data.postImage == 'svg-fileSlug' %}
+  <div class="contents lg:block lg:bg-gradient-to-t lg:from-sandy-500 lg:to-apple-500 lg:h-48 lg:aspect-square lg:p-6 lg:rounded-xl lg:my-4">
+  {% svg post.fileSlug, svgClass  %}
+  </div>
+  {%- endif %}
+  <h3 itemprop="name" id="{{ post.fileSlug }}" class="{{section.data.headerClasses}} font-medium text-xl lg:text-3xl my-2 sm:text-2xl">{{ post.data.title }}</h3>
+    <div class="notes" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <span itemprop="text">
+        {{ post.templateContent | safe  }}
+      </span
+    </div>
+  </article>
+  {%- endfor %} 
+</section>
+{%- endif -%}
+{%- endfor %} 
+</div>

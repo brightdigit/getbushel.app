@@ -4,18 +4,22 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@compodoc/live-server": "^1.2.3",
+    "eleventy-plugin-svg-sprite": "^1.3.0",
     "gzip-cli": "^1.2.0",
     "htmlhint": "^1.1.4",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-imsize": "^2.0.1",
     "nodemon": "^3.0.1",
     "prettier": "2.7.1"
   },
   "nodemonConfig": {
-    "watch":  [
-        "site/**/*.*",
-        "components/Styling/styles/*.*",
-        "components/Styling/scripts/*.*",
-        "tailwind.config.js",
-        "components/Resources/*.*"
+    "watch": [
+      "site/**/*.*",
+      "components/Styling/styles/*.*",
+      "components/Styling/scripts/*.*",
+      "tailwind.config.js",
+      "components/Resources/*.*",
+      "eleventy.js"
     ]
   },
   "scripts": {
