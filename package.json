@@ -4,7 +4,10 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@compodoc/live-server": "^1.2.3",
+    "adm-zip": "^0.5.10",
     "eleventy-plugin-svg-sprite": "^1.3.0",
+    "glob": "^8.1.0",
+    "glob-promise": "^6.0.5",
     "gzip-cli": "^1.2.0",
     "htmlhint": "^1.1.4",
     "markdown-it-attrs": "^4.1.6",
@@ -26,8 +29,8 @@
     "prepare": "npm install --prefix components/Styling",
     "start": "npm run watch & live-server public --no-browser -q",
     "watch": "nodemon --exec npm run dev",
-    "dev": "rm -fR .tmp; mkdir -p .tmp; cp -a components/Resources/. .tmp; eleventy --input=site --output=.tmp;NODE_ENV=development npm run --prefix components/Styling publish -- --output-filename ../../.tmp/js/main.js; rm -fR public; cp -R .tmp public",
-    "build": "rm -fR .public; cp -a components/Resources/. public; eleventy --input=site --output=public;NODE_ENV=production npm run --prefix components/Styling publish -- --output-filename ../../public/js/main.js; gzip \"public/**/*{.js,.css,.html,.xml}\" --extension=gz --extension=br"
+    "dev": "rm -fR .tmp; mkdir -p .tmp; cp -a components/Resources/. .tmp;NODE_ENV=development eleventy;NODE_ENV=development npm run --prefix components/Styling publish -- --output-filename ../../.tmp/js/main.js; rm -fR public; cp -R .tmp public",
+    "build": "rm -fR .public; cp -a components/Resources/. public;NODE_ENV=production eleventy;NODE_ENV=production npm run --prefix components/Styling publish -- --output-filename ../../public/js/main.js; gzip \"public/**/*{.js,.css,.html,.xml}\" --extension=gz --extension=br"
   },
   "author": "",
   "license": "ISC"

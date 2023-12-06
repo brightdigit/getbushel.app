@@ -1,8 +1,11 @@
+ {% svgsprite %}
  <header
       class="py-4 w-full sm:absolute inset-x-0 top-0 z-20 lg:container lg:mx-auto fixed bg-[#DAE6F2] sm:bg-transparent px-8 lg:px-0"
     >
       <nav class="flex h-10 justify-between">
-        <a class="text-apple-900 flex" href="/">
+        <ul class="flex items-center">
+        <li>
+        <a class="text-apple-900 flex px-4 -ml-4" href="/">
           <img
             class="object-scale-down block w-10"
             src="/media/logo.svg"
@@ -12,14 +15,29 @@
           />
           <h1 class="font-black text-2xl self-center">Bushel</h1>
         </a>
+</li>
+<li>
+        <a class="text-apple-900 flex self-start font-bold opacity-80 hover:opacity-100 ml-4 items-center" href="/support">
+        {% svg "question", "h-4 aspect-square fill-current mx-1" %}
+          Support
+        </a>
+        </li><li>
+        <a class="text-apple-900 flex font-medium opacity-80 hover:opacity-100 ml-4" href="/press-kit">
+        
+          Press Kit
+        </a>
+        </li>
+        </ul>
         <ol
           class="grid grid-rows-1 grid-flow-col gap-4 flex-none justify-items-stretch"
         >
           <li class="text-apple-900 flex items-center hidden">
             <a href="/">Press Kit</a>
           </li>
-
-          <li class="text-white flex items-center">
+          <li class="text-apple-900 sm:flex items-center hidden">
+            <a href="https://www.producthunt.com/posts/bushel-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bushel&#0045;2" target="_blank"><img class="block h-10" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=428271&theme=dark" alt="Bushel - Virtual&#0032;Machine&#0032;App&#0032;for&#0032;Devs | Product Hunt"/></a>
+          </li>
+          <li class="text-white md:flex items-center hidden">
             <a
               class="bg-black p-2 rounded-md font-semibold"
               href="https://testflight.apple.com/join/Jgk5o2M7"

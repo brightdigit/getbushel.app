@@ -18,6 +18,13 @@ body {
   }
 
 
+  a.yta svg {
+    @apply h-6 w-6 inline;
+  }
+
+  a.yta:hover svg, body#press-kit a.yta:hover  {
+    @apply animate-pulse text-red-600 fill-red-600 no-underline;
+  }
 
   main#content, main>.content {
     @apply font-light bg-gradient-to-b from-water-300 to-apple-12 lg:text-lg;
@@ -27,15 +34,15 @@ body {
     @apply text-4xl sm:text-6xl font-black py-8;
   }
 
-  main>.content h2{
+  main>.content h2, body#press-kit>main#content h2{
     @apply text-2xl sm:text-4xl font-black py-8;
   }
 
-  main>.content h3{
+  main>.content h3, body#press-kit>main#content h3{
     @apply text-xl sm:text-2xl font-semibold lg:font-bold py-6;
   }
  
-  main>.content h4{
+  main>.content h4, body#press-kit>main#content h4{
     @apply text-base lg:text-xl py-2 lg:font-medium;
   }
   
@@ -81,5 +88,87 @@ body {
 
   body#support>main#content #table-of-contents li{
     @apply mx-4 my-1;
+  }
+
+  body#press-kit>main#content iframe {
+    @apply w-full aspect-video max-w-xl;
+  }
+
+  body#press-kit>main#content a {
+    @apply text-blue-600;
+  }
+
+  body#press-kit>main#content ol {
+    @apply list-decimal list-outside pl-4;
+  }
+
+
+  body#press-kit>main#content ol > li {
+    @apply px-2;
+  }
+
+  body#press-kit>main#content ol > li, body#press-kit>main#content ul > li {
+    @apply my-4;
+  }
+
+  body#press-kit>main#content ol > li > p, body#press-kit>main#content ul > li > p {
+    @apply contents;
+  }
+
+  body#press-kit>main#content ol > li > p > strong:first-child:after, body#press-kit>main#content ul > li > p > strong:first-child:after {
+    content: "";
+    display: block;
+  }
+
+  body#press-kit>main#content .collection > ul {
+    @apply grid grid-cols-2 md:grid-cols-3 md:gap-2 justify-start;
+  }
+
+  body#press-kit>main#content .collection > ul > li {
+    @apply my-4 flex;
+  }
+
+  body#press-kit>main#content .collection > ul > li > img{
+    @apply flex;
+  }
+
+  body#press-kit>main#content .collection + p {
+    @apply text-right md:text-left;
+  }
+
+  body#press-kit>main#content .collection + p > a > svg {
+    @apply inline h-4 w-4 object-contain fill-current;
+  }
+
+  body#press-kit>main#content .collection + p > a:hover > svg {
+    @apply animate-bounce;
+  }
+
+  body#press-kit>main#content #contact-info > ul {
+    @apply sm:flex w-full flex-wrap  justify-between md:justify-start lg:max-w-screen-lg;
+  }
+
+  body#press-kit>main#content #contact-info > ul > li {
+    @apply font-bold text-sm flex flex-col basis-1/3 mx-2 md:basis-1/4 lg:basis-1/3 lg:flex-row lg:items-baseline lg:mx-0 lg:my-2;
+  }
+
+  body#press-kit>main#content #contact-info > ul > li > ul {
+    @apply flex flex-col lg:my-0 lg:ml-2;
+  }
+
+  body#press-kit>main#content #contact-info > ul > li > ul > li {
+    @apply font-light text-base my-0 block lg:my-0;
+  }
+
+  body#press-kit a:hover {
+    @apply underline;
+  }
+
+  body > footer ul.links a {
+    @apply text-water-975;
+  }
+
+  body > footer ul.links a:hover {
+    @apply underline;
   }
 }

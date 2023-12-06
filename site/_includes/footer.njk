@@ -2,7 +2,8 @@
       class="flex flex-col bg-apple-12 py-8 px-8 text-2xl 2xl:text-4xl 2xl:py-12"
     >
       <div class="flex flex-col lg:container lg:mx-auto">
-        <div class="self-start">
+        <div class="flex flex-col md:flex-row justify-between" >
+        <div>
           <a title="BrightDigit" href="https://brightdigit.com">
             <div class="text-xs italic md:text-sm">
               Bushel is owned and developed by
@@ -23,6 +24,15 @@
               />
             </svg>
           </a>
+        </div>
+          <div class="flex md:grid grid-flow-col auto-cols-max gap-2 h-12 my-2">
+            <a class="h-full" href="https://www.producthunt.com/posts/bushel-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bushel&#0045;2" target="_blank">
+              <img class="h-full mix-blend-multiply" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=428271&theme=dark" alt="Bushel - Virtual&#0032;Machine&#0032;App&#0032;for&#0032;Devs | Product Hunt"/>
+            </a>
+            <a class="h-full" href="https://apps.apple.com/us/app/bushel-dev-app-for-testing-vm/id1642807785?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200">
+              <img class="h-full mix-blend-multiply" src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1702598400" alt="Download on the Mac App Store">
+            </a>
+          </div>
         </div>
         <ol class="grid grid-rows-1 auto-cols-min grid-flow-col gap-4 my-2">
           <li>
@@ -61,15 +71,18 @@
         </ol>
       </div>
       <div
-        class="flex flex-col md:flex-row justify-between mt-2 text-sm p-2 lg:container lg:mx-auto drop-shadow lg:font-medium"
+        class="flex flex-col lg:flex-row justify-between mt-2 text-sm p-2 lg:container lg:mx-auto drop-shadow lg:font-medium items-end"
       >
-        <div>
+        <div class="flex flex-col">
           <span class="whitespace-nowrap">5859 W Saginaw #182</span>
           <span class="whitespace-nowrap">Lansing MI 48917</span>
         </div>
-        <div>© Bright Digit, LLC 2023</div>
-        <ul class="flex flex-row space-x-6 py-2 md:py-0 list-disc">
+        <div class="whitespace-nowrap py-2 lg:py-0">© Bright Digit, LLC 2023</div>
+        <ul class="flex flex-row flex-wrap space-x-6 py-2 md:flex-nowrap md:py-0 list-disc links">
           <li class="list-none"><a href="https://brightdigit.com/about-us/">About Us</a></li>
+          <li><a href="/support">Support</a></li>
+          <li><a href="/press-kit">Press Kit</a></li>
+          <li><a href="/release-notes">Release Notes</a></li>
           <li><a href="/terms-of-use">Terms of Use</a></li>
           <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
