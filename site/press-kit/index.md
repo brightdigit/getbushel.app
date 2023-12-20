@@ -29,6 +29,12 @@ title: Press Kit | Bushel
 - GitHub
   - [@brightdigit](http://github.com/brightdigit)
   - [@leogdion](http://github.com/leogdion)
+- Indie Hackers
+  - [Bushel](https://www.indiehackers.com/product/bushel)
+- Indie App Catalog
+  - [Bushel](https://indiecatalog.app/app/1642807785/bushel-dev-app-for-testing-vm)  
+- Airport
+  - [Bushel](https://app.airport.community/app/reckv5Kl3sn7MFTZ7)  
 
 </div>
 

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "flaticon";
-  src: url("flaticon/Flaticon.ttf?cf5aeb7baeb32fe7793acb856a17cf35")
+  src: url("flaticon/Flaticon.ttf?20c8a9854692fe84b37fe1165b9fb7d6")
       format("truetype"),
-    url("flaticon/Flaticon.woff?cf5aeb7baeb32fe7793acb856a17cf35")
+    url("flaticon/Flaticon.woff?20c8a9854692fe84b37fe1165b9fb7d6")
       format("woff"),
-    url("flaticon/Flaticon.woff2?cf5aeb7baeb32fe7793acb856a17cf35")
+    url("flaticon/Flaticon.woff2?20c8a9854692fe84b37fe1165b9fb7d6")
       format("woff2"),
-    url("flaticon/Flaticon.eot?cf5aeb7baeb32fe7793acb856a17cf35#iefix")
+    url("flaticon/Flaticon.eot?20c8a9854692fe84b37fe1165b9fb7d6#iefix")
       format("embedded-opentype"),
-    url("flaticon/Flaticon.svg?cf5aeb7baeb32fe7793acb856a17cf35#flaticon")
+    url("flaticon/Flaticon.svg?20c8a9854692fe84b37fe1165b9fb7d6#flaticon")
       format("svg");
 }
 
@@ -25,35 +25,62 @@ i[class*=" flaticon-"]:before {
 }
 
 .flaticon-twitter:before {
-  content: "\f101";
+    content: "\f101";
 }
 .flaticon-youtube:before {
-  content: "\f102";
+    content: "\f102";
 }
 .flaticon-github:before {
-  content: "\f103";
+    content: "\f103";
 }
 .flaticon-podcast:before {
-  content: "\f104";
+    content: "\f104";
 }
 .flaticon-rss:before {
-  content: "\f105";
+    content: "\f105";
 }
 .flaticon-newsletter:before {
-  content: "\f106";
+    content: "\f106";
 }
 .flaticon-calendar:before {
-  content: "\f107";
+    content: "\f107";
 }
 .flaticon-announcement:before {
-  content: "\f108";
+    content: "\f108";
 }
 .flaticon-share:before {
-  content: "\f109";
+    content: "\f109";
 }
 .flaticon-linkedin:before {
-  content: "\f10a";
+    content: "\f10a";
 }
 .flaticon-buffer:before {
-  content: "\f10b";
+    content: "\f10b";
+}
+.flaticon-mastodon:before {
+    content: "\f10c";
+}
+.flaticon-clipboard:before {
+    content: "\f10d";
+}
+.flaticon-patreon:before {
+    content: "\f10e";
+}
+.flaticon-app:before {
+    content: "\f10f";
+}
+.flaticon-press-release:before {
+    content: "\f110";
+}
+.flaticon-indie-hackers:before {
+    content: "\f111";
+}
+.flaticon-catalog:before {
+    content: "\f112";
+}
+.flaticon-product-hunt:before {
+    content: "\f113";
+}
+.flaticon-airport:before {
+    content: "\f114";
 }

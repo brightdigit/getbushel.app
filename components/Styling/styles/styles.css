@@ -160,7 +160,7 @@ body {
     @apply font-light text-base my-0 block lg:my-0;
   }
 
-  body#press-kit a:hover {
+  body#press-kit > main a:hover {
     @apply underline;
   }
 
@@ -170,5 +170,9 @@ body {
 
   body > footer ul.links a:hover {
     @apply underline;
+  }
+  
+  body > footer .icons a:hover {
+    @apply no-underline text-apple-800 drop-shadow-lg;
   }
 }
