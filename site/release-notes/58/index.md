@@ -1,6 +1,6 @@
 ---
 tags: release-notes
-title: v1.0.0-beta.7
+title: v1.0.0-beta.10
 permalink: false
 date: 2023-11-28
 ---
