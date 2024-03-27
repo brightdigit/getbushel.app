@@ -90,7 +90,7 @@ body {
     @apply mx-4 my-1;
   }
 
-  body#press-kit>main#content iframe {
+  body#press-kit>main#content iframe.youtube {
     @apply w-full aspect-video max-w-xl;
   }
 

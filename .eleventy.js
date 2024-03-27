@@ -88,7 +88,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("youtube", function(id) {
-    return `<iframe src="https://www.youtube.com/embed/${id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    return `<iframe class="youtube" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
   });
 
 

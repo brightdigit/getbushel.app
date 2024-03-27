@@ -63,6 +63,22 @@ For more details please checkout our [support page](/support) or please feel fre
 
 Bushel presents **a groundbreaking macOS virtual machine app, tailored exclusively for developers**. Offering seamless testing, rollback capabilities, and diverse OS configurations, Bushel elevates the app development experience. Dive into the future of app creation with Bushel - where versatility meets efficiency, transforming the landscape of macOS app development.
 
+## Press Coverage and Releases
+
+### [CompileSwift - macOS Virtual Machines with Bushel, and SwiftData with Leo Dion](https://www.compileswift.com/podcast/s06e02/)
+_January 14, 2024_
+
+A conversation between two developers discussing Bushel, an app developed by Leo. Leo explains Bushel is designed as a valuable tool for developers, allowing users to spin up an entire VM of an operating system, trial something, and, if it doesn't work, delete the VM without causing any issue to the primary system.
+Bushel also uses the newly released Swift Data for managing database functions. Leo shares his experiences building the app, including challenges initially using ‘User Defaults’ for data storage and navigating the sandboxing system.
+
+<iframe class="w-full" width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/32b702dd"></iframe>
+
+<hr class="my-4 mt-8 opacity-25 border-2 border-dotted border-black">
+
+### [Introducing Bushel: Revolutionizing macOS App Dev with a Groundbreaking Virtual Machine Experience](https://www.prlog.org/12997244-introducing-bushel-revolutionizing-macos-app-dev-with-groundbreaking-virtual-machine-experience.html)
+_December 6, 2023_
+
+Discover Bushel, the game-changing macOS virtual machine app designed to streamline app testing and development. Enjoy seamless OS version management, rollback features, and diverse configurations, all in one user-friendly platform.
 
 ## Media Assets
 
