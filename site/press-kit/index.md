@@ -131,5 +131,10 @@ Bushel is **completely free to use.**
 
 **Upgrading to Bushel Pro includes** enhanced capabilities, including:
 
+<div class="pro-features">
+
 - **Enhanced Snapshot Management** Bushel Pro offers automatic periodic snapshots and snapshot-on-shutdown for added safety and ease.
 - **Enhanced macOS Restore Image Handling** Improved management of macOS restore images for seamless OS installations.
+- **Early Access to New Features** Get access to new features such as redesigns and enhance machine monitoring.
+
+</div>

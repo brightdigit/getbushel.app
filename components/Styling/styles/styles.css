@@ -160,7 +160,18 @@ body {
     @apply font-light text-base my-0 block lg:my-0;
   }
 
-  body#press-kit > main a:hover {
+  body#press-kit>main#content .pro-features {
+    @apply mx-8 -my-4 text-sm md:text-base;
+  }
+
+  body#press-kit>main#content .pro-features > * {
+    @apply my-4;
+  }
+  body#press-kit>main#content .pro-features li {
+    @apply my-2 flex flex-col;
+  }
+
+  body#press-kit a:hover {
     @apply underline;
   }
 
