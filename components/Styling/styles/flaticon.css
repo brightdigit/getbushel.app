@@ -1,19 +1,18 @@
 @font-face {
   font-family: "flaticon";
-  src: url("flaticon/Flaticon.ttf?20c8a9854692fe84b37fe1165b9fb7d6")
+  src: url("flaticon/flaticon.ttf?ec462b630037b79fc6823117dafb3a3c")
       format("truetype"),
-    url("flaticon/Flaticon.woff?20c8a9854692fe84b37fe1165b9fb7d6")
+    url("flaticon/flaticon.woff?ec462b630037b79fc6823117dafb3a3c")
       format("woff"),
-    url("flaticon/Flaticon.woff2?20c8a9854692fe84b37fe1165b9fb7d6")
+    url("flaticon/flaticon.woff2?ec462b630037b79fc6823117dafb3a3c")
       format("woff2"),
-    url("flaticon/Flaticon.eot?20c8a9854692fe84b37fe1165b9fb7d6#iefix")
+    url("flaticon/flaticon.eot?ec462b630037b79fc6823117dafb3a3c#iefix")
       format("embedded-opentype"),
-    url("flaticon/Flaticon.svg?20c8a9854692fe84b37fe1165b9fb7d6#flaticon")
+    url("flaticon/flaticon.svg?ec462b630037b79fc6823117dafb3a3c#flaticon")
       format("svg");
 }
 
-i[class^="flaticon-"]:before,
-i[class*=" flaticon-"]:before {
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
   font-family: flaticon !important;
   font-style: normal;
   font-weight: normal !important;
@@ -84,3 +83,7 @@ i[class*=" flaticon-"]:before {
 .flaticon-airport:before {
     content: "\f114";
 }
+.flaticon-discourse:before {
+    content: "\f115";
+}
+
