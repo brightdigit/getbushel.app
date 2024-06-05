@@ -40,7 +40,13 @@ title: Press Kit | Bushel
 
 ## Product Information
 
+### Pre-Order Anouncement 
+
 {% youtube "CV1G_Og4UcI" %}
+
+### LiveStream Demos / Seminar Playlist 
+
+{% youtube "?listType=playlist&list=PLmpJxPaZbSnDQ7gk2HHIWrJtfwvkhfcMq" %}
 
 ### Requirements
 
@@ -65,6 +71,13 @@ Bushel presents **a groundbreaking macOS virtual machine app, tailored exclusive
 
 ## Press Coverage and Releases
 
+### [Bushel v1.2.0 Launches Just in Time for macOS 15 Beta and WWDC 2024](https://www.prlog.org/13023594-bushel-v1-20-launches-just-in-time-for-macos-15-beta-and-wwdc-2024.html)
+_June 5, 2024_
+
+New update is perfect for developers testing and building for the next version of macOS, with enhanced performance, feature requests, and improved document management.
+
+<hr class="my-4 mt-8 opacity-25 border-2 border-dotted border-black">
+
 ### [CompileSwift - macOS Virtual Machines with Bushel, and SwiftData with Leo Dion](https://www.compileswift.com/podcast/s06e02/)
 _January 14, 2024_
 
@@ -79,6 +92,7 @@ Bushel also uses the newly released Swift Data for managing database functions. 
 _December 6, 2023_
 
 Discover Bushel, the game-changing macOS virtual machine app designed to streamline app testing and development. Enjoy seamless OS version management, rollback features, and diverse configurations, all in one user-friendly platform.
+
 
 ## Media Assets
 
