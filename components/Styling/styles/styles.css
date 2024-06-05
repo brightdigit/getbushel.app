@@ -90,6 +90,15 @@ body {
     @apply mx-4 my-1;
   }
 
+  body#support>main#content ul {
+    @apply list-disc ml-8 -indent-4 list-inside py-4;
+  }
+
+  body#support>main#content a{
+    @apply text-water-975 hover:underline font-normal;
+  }
+
+
   body#press-kit>main#content iframe.youtube {
     @apply w-full aspect-video max-w-xl;
   }
