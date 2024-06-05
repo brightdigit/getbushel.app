@@ -3,6 +3,7 @@ tags: release-notes
 title: v1.2.0
 permalink: false
 date: 2024-06-05
+---
 
 ![Bushel 1.2.0 Bento](/media/release-notes/105/Bushel-v1.2-Bento-transparent@0.5x.webp "Bushel 1.2.0 Bento Features")
 
