@@ -18,4 +18,8 @@ Organize and annotate [snapshots](#snapshot) with additional notes.
 
 [snapshots](#snapshot) on shutdown for instant backups.
 
+#### Remove Watermark on Screen Captures
+
+Remove the watermark on captured recordings and screenshots from your VMs.
+
 More features are coming soon exclusive to the Pro subscription, so stay tuned!

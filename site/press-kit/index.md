@@ -40,10 +40,6 @@ title: Press Kit | Bushel
 
 ## Product Information
 
-### Pre-Order Anouncement 
-
-{% youtube "CV1G_Og4UcI" %}
-
 ### LiveStream Demos / Seminar Playlist 
 
 {% youtube "?listType=playlist&list=PLmpJxPaZbSnDQ7gk2HHIWrJtfwvkhfcMq" %}
@@ -123,6 +119,8 @@ Discover Bushel, the game-changing macOS virtual machine app designed to streaml
 [Download Screenshots {% svg "download-circular-button" %}](/media/downloads/zips/screenshots.zip)
 
 ## Features
+
+* **Screenshot and Screen Recording** Take a recording or screenshot of what your are doing on your virtual machine and share it with others.
 
 * **Virtual Machine Customization** Tailor your virtual machine to your exact needs. Choose your desired macOS version, configure CPU, memory, and disk space, and optimize your development environment for peak performance.
 
