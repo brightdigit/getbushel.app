@@ -45,7 +45,7 @@ description: Quickly test, rollback, simulate and debug your macOS apps. Sign up
           <img class="w-full flex " src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1702598400" alt="Download on the Mac App Store">
           </a>
           
-<section class="flex mt-16">
+<section class="flex mt-16 max-w-screen-lg">
 
                  <video src="/media/screen-recordings.webm" type="video/webm" poster="screen-recordings.webp" loop autoplay>
             <img src="screen-recordings.webp">
@@ -98,11 +98,17 @@ description: Quickly test, rollback, simulate and debug your macOS apps. Sign up
           </div>
         </section>
 
-<section class="flex mx-10 lg:mx-20" >
+<section class="flex mx-10 lg:mx-20 justify-center" >
 
-                 <video src="/media/xcode-vms.webm" type="video/webm" autoplay loop>
-            <p>Your browser cannot play the provided video file.</p>
-        </video>
+
+        <video class="m-auto" autoplay loop>
+  <source 
+    src="/media/xcode-vms.mov" 
+    type='video/mp4; codecs="hvc1"'>
+  <source 
+    src="/media/xcode-vms.webm" 
+    type="video/webm">
+</video>
   </section>
         <section
           class="flex flex-col items-center p-10 md:flex-row lg:container lg:mx-auto sm:py-16 lg:py-24"
