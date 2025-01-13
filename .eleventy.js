@@ -4,7 +4,7 @@ var md = require('markdown-it')('commonmark');
 var markdownItAttrs = require('markdown-it-imsize');
 var markdownItImgSize = require('markdown-it-imsize');
 const AdmZip = require('adm-zip');
-const { glob } = require('glob');
+const glob = require('glob-promise');
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const fs = require('fs');
 const path = require('path');
@@ -20,18 +20,9 @@ module.exports = function(eleventyConfig) {
     
     await fs.promises.mkdir(`${outputDir}/media/downloads/zips`, { recursive: true });
     const directories = await glob('./components/Assets/zips/*',{ stat: true, withFileTypes: true });
-    console.log(directories)
-    const timeSortedFiles = await directories.map(async (path) => {
-      console.log(`${path.fullpath()}/*.*`);
-       return  glob(`${path.fullpath()}/*.*`);
-  })
-    
+    const timeSortedFiles = await directories.map(path => { return glob(`${path}/*.*`)})
+  
     for await (const file of timeSortedFiles) {
-      console.log(file)
-      if (file.length < 1) {
-        console.log("isEmpty")
-        continue;
-      }
       let zip = new AdmZip();
       for await (const f of file) {
         zip.addLocalFile(f);
