@@ -7,6 +7,13 @@ import dotenv from "dotenv";
 // Load environment variables from root .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
+// Validate PLAUSIBLE_PAGE_ID is set
+const plausiblePageId = process.env.PLAUSIBLE_PAGE_ID;
+if (!plausiblePageId) {
+  console.warn('\n⚠️  Warning: PLAUSIBLE_PAGE_ID environment variable is not set.');
+  console.warn('   Analytics tracking will be disabled. See .env.example for setup instructions.\n');
+}
+
 const config: Configuration = {
   entry: "./scripts/index.ts",
   output: {
