@@ -16,6 +16,15 @@ Snapshots serve as a safety net for users, allowing them to create a backup of a
 
 1. **Taking Snapshots**: Within the Bushel interface, initiate the snapshot feature to capture the current state of the VM.
 2. **Restoring from Snapshots**: If necessary, revert the VM back to a previously taken snapshot to return to that specific state.
-3. **Snapshot Management**: Organize and manage snapshots by naming them descriptively to easily identify specific states of the VM.
+3. **Exporting/Cloning from Snapshots**: Click the share button on any snapshot to export it as a completely separate machine. This creates an independent VM that can run simultaneously with the original.
+4. **Snapshot Management**: Organize and manage snapshots by naming them descriptively to easily identify specific states of the VM.
+
+#### Benefits of Exporting Snapshots
+
+Exporting snapshots allows you to:
+- Create clones for testing without affecting the original machine
+- Share configured environments with team members
+- Maintain multiple versions of a machine for different purposes
+- Keep backups that can be immediately launched if needed
 
 Snapshots in Bushel are a vital feature that enables users to capture and restore the state of a virtual machine, providing a safety net for testing and development. By effectively utilizing snapshots, users can experiment and make changes within VMs without the fear of losing critical configurations or data.
