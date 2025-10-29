@@ -11,7 +11,7 @@ You can easily clone a virtual machine by exporting it from a snapshot. This fea
 1. Open your virtual machine in Bushel
 2. Navigate to the **Snapshots** section
 3. Select the snapshot you want to export
-4. Tap the **Share button** (export icon)
+4. Click the **Share button** (export icon)
 5. Choose where to save the exported machine
 
 The exported machine becomes a standalone VM that you can:

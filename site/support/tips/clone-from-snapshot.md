@@ -11,7 +11,7 @@ One of Bushel's most powerful features is the ability to clone virtual machines 
 1. Open your virtual machine
 2. Navigate to the **Snapshots** section
 3. Select any snapshot
-4. Tap the **Share button** to export it as a new machine
+4. Click the **Share button** to export it as a new machine
 
 #### Use Cases for Cloning
 
