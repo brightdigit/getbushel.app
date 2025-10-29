@@ -2,7 +2,7 @@ import "./../styles/styles.css";
 
 import Plausible from "plausible-tracker";
 
-const pageID = "7d44e5cdd9bf0241d295591162f4c69ac1de5e09";
+const pageID = process.env.PLAUSIBLE_PAGE_ID || "";
 
 const plausible = Plausible({
   domain: "getbushel.app",
