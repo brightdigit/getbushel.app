@@ -103,6 +103,42 @@ The support section uses a custom collection that:
 - **Plausible Analytics**: Privacy-focused analytics integration
 - **Form tracking**: Signup form submissions tracked with custom events
 
+## Environment Variables
+
+### Required Configuration
+
+The project requires the following environment variable:
+
+- **PLAUSIBLE_PAGE_ID**: Your Plausible Analytics page ID for tracking analytics events
+
+### Local Development Setup
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and set your Plausible page ID:
+   ```
+   PLAUSIBLE_PAGE_ID=your_actual_page_id_here
+   ```
+
+3. The environment variable is loaded by webpack during the build process via `dotenv`
+4. The value is compiled into the JavaScript bundle at `public/js/main.js`
+5. If the variable is not set, you'll see a warning during the build, and analytics tracking will be disabled
+
+### Environment Variable Flow
+
+1. **Local Development**:
+   - `.env` file in project root → `dotenv.config()` in `components/Styling/webpack.config.ts`
+   - Webpack's DefinePlugin injects the value as `process.env.PLAUSIBLE_PAGE_ID`
+   - Used in `components/Styling/scripts/index.ts` for analytics tracking
+
+2. **CI/CD (GitHub Actions)**:
+   - Set `PLAUSIBLE_PAGE_ID` in repository secrets (Settings → Secrets and variables → Actions)
+   - The workflow passes the secret to the build environment
+   - CI includes verification steps to ensure the variable is set and appears in the bundle
+
 ## Development Notes
 
 ### Content Updates

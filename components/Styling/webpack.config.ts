@@ -1,6 +1,18 @@
 import path from "path";
 import { Configuration } from "webpack";
 import ESLintPlugin from "eslint-webpack-plugin";
+import webpack from "webpack";
+import dotenv from "dotenv";
+
+// Load environment variables from root .env file
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
+// Validate PLAUSIBLE_PAGE_ID is set
+const plausiblePageId = process.env.PLAUSIBLE_PAGE_ID;
+if (!plausiblePageId) {
+  console.warn('\n⚠️  Warning: PLAUSIBLE_PAGE_ID environment variable is not set.');
+  console.warn('   Analytics tracking will be disabled. See .env.example for setup instructions.\n');
+}
 
 const config: Configuration = {
   entry: "./scripts/index.ts",
@@ -33,9 +45,14 @@ const config: Configuration = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-  plugins:  [new ESLintPlugin({
-    extensions : [".ts", ".js"]
-  })]
+  plugins:  [
+    new ESLintPlugin({
+      extensions : [".ts", ".js"]
+    }),
+    new webpack.DefinePlugin({
+      "process.env.PLAUSIBLE_PAGE_ID": JSON.stringify(process.env.PLAUSIBLE_PAGE_ID || ""),
+    })
+  ]
 };
 
 export default config;
