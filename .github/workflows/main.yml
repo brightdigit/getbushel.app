@@ -34,7 +34,28 @@ jobs:
           cd components/Styling && npm install
         
       - name: Build
-        run: npm run build
+        env:
+          PLAUSIBLE_PAGE_ID: ${{ secrets.PLAUSIBLE_PAGE_ID }}
+        run: |
+          if [ -z "$PLAUSIBLE_PAGE_ID" ]; then
+            echo "ERROR: PLAUSIBLE_PAGE_ID is not set in GitHub secrets"
+            exit 1
+          fi
+          echo "Building with Plausible page ID configured..."
+          npm run build
+
+      - name: Verify Build Output
+        run: |
+          if [ ! -f "public/js/main.js" ]; then
+            echo "ERROR: JavaScript bundle not found at public/js/main.js"
+            exit 1
+          fi
+          if grep -q "pageID" public/js/main.js; then
+            echo "✓ Plausible pageID found in JavaScript bundle"
+          else
+            echo "ERROR: pageID not found in bundle"
+            exit 1
+          fi
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
