@@ -10,6 +10,7 @@
     "glob-promise": "^6.0.5",
     "gzip-cli": "^1.2.0",
     "htmlhint": "^1.1.4",
+    "markdown-it": "^14.3.2",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-imsize": "^2.0.1",
     "nodemon": "^3.0.1",
