@@ -163,4 +163,4 @@ The project uses HTMLHint with strict rules (see `.htmlhintrc`):
 
 ### Node Version
 
-Node 20.x required (see `.nvmrc`)
+Node 22.x (see `.nvmrc`; Eleventy 3 requires Node 18+)
